@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Meu Site</title>
+        
+        <link rel = "icon" href = "C:\Users\Alunos\Documents\GitHub\repositorio_adenilson\html\img.png">
+
+
+    </head>
+
+    <body style="background-color: #96c4ec">
+
+    <ing src ="">
+        <a href  ="index.html">
+            <b>| HOME |</b>
+        </a>
+        <a href = "somos.html">
+            <b>| Quem Somos |</b>
+        </a>
+        <a href = "Contato.html">
+            <b>| CONTATO |</b>
+        </a>
+
+    <h2>Entre em contao conosco:</h2>
+    <form>
+        <p>
+            Nome:<br>
+            <input type="text" size="30" name="nome">
+        </p>
+        <p>
+            E-mail: <br>
+            <input type = "text" size="30" name="mail"
+        </p>
+        <p>
+            Comentário:<br>
+            <input type = "text" size="30" name="comentário"
+        </p>
+        <p>
+            <input type = "submit" name="btnEnviar" value="Enviar">
+            <input type = "reset" name="btnApagar" value="Apagar">
+        </p>
+
+    </form>
+
+    <h2>Configuração</h2>
+    <form action="acao.php" method="post">
+        Limiar:
+        <input type = "range" name = "limiar" min="0" max="100" value="50">
+        <input type = "submit" value = "Enviar"> 
+        
+    </form>
+
+    <form name = "numero" id="num" method="get">
+        <input type = "number" name = "num" min="0" max="10" step="2">
+        <input type = "submit" value="Enviar">
+    </form>
+
+    <div align="center" >
+        <form name = "calendario" id="cadID" method="get">
+            Selecione uma Hora <input type="time" name="miHora" id="mihora">
+            <input type = "submit" value="Ok">
+        </form>
+    </div>
+
+    <div align="center">
+        <form name = "formMes" id="Mes" method="get">
+            Selecione o mês: <input type = "month" name = "miMes" id="mimes">
+            <input type = "submit" value="Ok">
+        </form>
+    </ing>
+
+    <div align="right" >
+        <form name = "formData" id="Semana" method="get">
+            Selecione o mês: <input type = "week" name = "selSem" id="selsem">
+            <input type = "submit" value="Ok">
+        </form>
+    </div>
+
+    <div align="right" >
+        <form name = "formData" id="data" method="get">
+            Selecione o mês: <input type = "date" name = "selData" id="seldata">
+            <input type = "submit" value="Ok">
+        </form>
+    </div>
+    <div>
+        <form style = "background-color: hsl(236, 57%, 41%)">
+            Selecione uma cor:
+            <input type = "color" name = "cor" id="Selcor">
+            <input type = "submit" value="Ok">
+        </form>
+    </div>
+    
+    <div>
+        <form style = "background-color: hsl(237, 43%, 90%)">
+        Está é uma checBox:
+        <input type = "checBox" name = "cor" id="Selcor">
+        Este é um Radio Button:
+        <input type = "radio" name = "cor" id="Selcor">
+        <input type = "submit" value="Ok">
+        </form>
+    </div>
+
+    <div>
+        <form style = "background-color: hwb(340 32% 3%)">
+        Selecione data, Hora:
+        <input type = "datetime-local" name = "dttm" id="dttm">
+        <input type = "submit" value="Ok">
+        </form>
+    </div>
+
+    <span style="color:rgb(238, 83, 22)">
+        <marquee behavior>
+            Aula de HTML!!!
+        </marquee>
+
+    </span>
+
+    <span>
+        <marquee behavior="alternate" direction="left" scrolldelay="0">
+            <img src = "C:\Users\Alunos\Documents\GitHub\repositorio_adenilson\Meu site\index\foguete2.jpg" width = "100" height="35">
+        </marquee>
+    </span>
+
+
+
+
+    </body>
+
+
+
+</html>

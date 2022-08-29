@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cadastro de Usuário</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!--Importar Ícones-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body style="background-color: aquamarine;">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" i
+        ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <!--Inicio Menu-->
+        <table align="left">
+            <tr>
+                <td align="center">
+                    <a href="defaul.html">
+                        <img src="img/user.jpg" width="42" height="36">
+                        <br>
+                        Usuário
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="produtos.html">
+                        <img src="img/box.png" width="42" height="36">
+                        <br>
+                        Produtos
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h1 align = "center">Cadastro de Usuários</h1>
+        <form action="" method="post">
+            <!--Dados Pessoais-->
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                        <td>
+                            <label for="sobrenome">Sobrenome:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="sobrenome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Data Nascimento:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rg">Rg:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rg" size="13" maxlength="13">
+                        </td>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cpf" size="9" maxlength="9">
+                            -
+                            <input type = "text" name = "cpf2" size="2" maxlength="2">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <!--Dados de Endereço-->
+            <fieldset>
+                <legend>Dados de Endereço:</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="rua">Rua:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rua">
+                        </td>
+                        <td>
+                            <label for="nro">Número:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nro" size="6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bairro">Bairro:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="bairro">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estado">Estado:</label>
+                        </td>
+                        <td align="left">
+                            <select name="estado" id="uf">
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal</option>
+                                <option value="es">Esperito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraiba</option>
+                                <option value="pe">Pernanbuco</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="ro">Rondônia</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="rr">Roraima</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="se">Sergipe</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade">Cidade:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cidade">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cep">CEP:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="cep" size="5" maxlength="5">
+                            -
+                            <input type="text" name="cep2" size="3"maxlength="3">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <!--Dados de Login-->
+            <fieldset>
+                <legend>Dados de Login:</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="img">Imagem</label>
+                        </td>
+                        <td>
+                            <input type="file" name="img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="login">Nome do Usuário</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Senha</label>
+                        </td>
+                        <td align="left">
+                            <input type="password" name="pass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passconf">Confirme a Senha</label>
+                        </td>
+                        <td align="left">
+                            <input type="passcword" name="passconf">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <input type="submit">
+            <input type="reset" value="Limpar">
+
+        </form>
+    </body>
+</html>

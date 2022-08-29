@@ -1,0 +1,12 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+<<<<<<< HEAD
+=======
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+>>>>>>> 9310a6cb253cd84faba71c9f19d323170fb2d63d

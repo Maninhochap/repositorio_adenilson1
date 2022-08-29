@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+
+        <style>
+            body{
+                font-family: Verdana;
+                background-color: rgb(194, 179, 179);
+            }
+            table {
+                border: 3px solid white;
+                background-color: #e0f3ed;
+            }
+            input{
+                border: 1px solid rgb(193, 236, 216);
+                padding: auto;
+                padding: 8px 50px;
+            }
+            p{
+                font-size: 14px;
+                color: gray;
+            }
+            legend{
+                color: rgb(152, 204, 180);
+                font-weight: bold;
+            }
+            input.btn-cadastrar {
+                background-color:rgb(154, 201, 190);
+                cursor: pointer;
+                padding: 8px 32px;
+                font-size: 16px;
+                border-radius: 5px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post">
+            <!--Dados Pessoais-->
+            <table align="center" cellspacing="10">
+                <tr>
+                    <td>
+                        <legend>CADASTRE-SE</legend>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Insira seus dados abaixo para receber as<br> novidades gratuitamente em seu email</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="name" size="22" placeholder="Seu nome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" size="22" placeholder="Seu email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" class="btn-cadastrar" value="Cadastrar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Meu site - Contato</title>
+        <!--Importar Ícones-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body style="background-color: cadetblue;">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" i
+        ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!--Inicio Menu-->
+        <table align="left">
+            <tr>
+                <td align="center">
+                    <a href="defaul.html">
+                        <img src="img/user.jpg" width="42" height="36">
+                        <br>
+                        Usuário
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="produtos.html">
+                        <img src="img/box.png" width="42" height="36">
+                        <br>
+                        Produtos
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h1 align = "center">Cadastro de Produtos</h1>
+        <form action="" method="post">
+            <!--Dados do Produto-->
+            <fieldset>
+                <legend>Dados Produtos:</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label>Descrição:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cat" size="9" maxlength="9">
+                        </td>
+                        <td>
+                            <label for="nome">Fabricante:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Data Fabricação:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </td>
+                        <td>
+                            <label>Data Validade:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados Fabricante:</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="cnpj">CNPJ:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cnpj" size="8" maxlength="8">
+                            /
+                            <input type = "text" name = "cnpj2" size="4" maxlength="4">
+                            -
+                            <input type = "text" name = "cnpj3" size="2" maxlength="2">
+                        </td>
+                        <td>
+                            <input align="center" type="submit" value="Consultar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fab">Fabricante:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="fab">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rua">Rua:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rua">
+                        </td>
+                        <td>
+                            <label for="nro">Número:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nro" size="6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bairro">Bairro:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="bairro">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estado">Estado:</label>
+                        </td>
+                        <td align="left">
+                            <select name="estado" id="uf">
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal</option>
+                                <option value="es">Esperito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraiba</option>
+                                <option value="pe">Pernanbuco</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="ro">Rondônia</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="rr">Roraima</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="se">Sergipe</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade">Cidade:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cidade">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cep">CEP:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="cep" size="5" maxlength="5">
+                            -
+                            <input type="text" name="cep2" size="3"maxlength="3">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Valores Produto</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Valor de Compra:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                        <td>
+                            <label for="nome">Valor de Venda:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                        <td>
+                            <label for="nome">Quantidade:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend align="center">Imagem do Produto</legend>
+                <table  align="center" cellspacing="10">
+                    <tr>
+                        <td>
+                            <img src="img/Heineken.jpg" width="200" height="250">
+                        </td>
+                        <td>
+                            <img src="img/Biluzitos.png" width="200" height="250">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <div align="right">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </body>
+</html>

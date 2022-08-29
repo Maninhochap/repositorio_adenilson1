@@ -1,0 +1,77 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border: 3px solid blue;
+  color: azure;
+  margin: 0 auto;
+  background: linear-gradient(110deg, #2270d0 0%, #30cfd0 100%);
+}
+input{
+  border: 2px solid #2260d0;
+}
+.btn-cad{
+  background-color: green;
+}
+.btn-canc{
+  background-color: orangered;
+}
+.grow:hover{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.shrink:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    font-size: 20px;
+    background: linear-gradient(120deg, #e43516 0%, rgb(196, 228, 116) 100%);
+    border: 2px solid rgb(162, 236, 135);
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  input{
+    background: rgb(166, 166, 181);
+  }
+  .btn-cad{
+    grid-column: 1;
+    grid-row: 2;
+    background: rgb(77, 222, 9);
+  }
+  .btn-canc{
+    grid-column: 2;
+    grid-row: 2;
+    background: rgb(240, 45, 45);
+    color: black;
+  }
+}
+@media screen and (max-width:899px) {
+  .container{
+    background: linear-gradient(120deg, #599b0f 0%, #84fab0 100%);
+    border: 3px solid rgb(41, 212, 178);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+  }
+  input{
+    background: rgb(217, 232, 239);
+  }
+  .btn-cad{
+    background: rgb(30, 182, 68);
+  }
+  .btn-canc{
+    background: #ec1127;
+  }
+}

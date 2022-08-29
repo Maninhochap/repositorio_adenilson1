@@ -1,0 +1,46 @@
+body{
+  background-image: url(../img/images.jpg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lbl{
+  color:aqua;
+}
+
+legend{
+  color:white;
+  font-weight:bold;
+}
+
+.titulos{
+  color:white;
+  font-weight:bold;
+}
+
+.btn-reset{
+  background-color: orange;
+  padding: 8px 25px;
+  font-weight:bold;
+  border: 3px solid white;
+  color: white;
+}
+
+.btn-cadastrar{
+  background-color:green;
+  padding: 8px 25px;
+  font-weight:bold;
+  border: 3px solid white;
+  color: white;
+}
+
+input.txt{
+  background-color:bisque;
+  padding: 7px;
+  border: 2px solid white;
+}
+
+::placeholder{
+  color:gray;
+}

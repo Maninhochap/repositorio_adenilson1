@@ -1,0 +1,31 @@
+@media print and (max-width:480px){
+  /*Informamos as propriedades*/
+}
+/*Carrega o arquivo fancyfonts.css para a media tela*/
+@import url("fancyfonts.css");
+
+/*define a regra tamanho da fonte 10pt somente para a impressão*/
+@media print{
+  body{font-size: 10pt;}
+}
+/*define a regra tamanho da fonte 13px somente para a tela*/
+@media screen {
+  body{font-size: 13px;}
+}
+@media screen, print {
+  body{line-height: 1.2;}
+}
+
+/*Regra de Definição de cor*/
+@media screen and (color) {
+  
+}
+
+/*condição and combinada com Or*/
+@media all and (orientation::portroit){
+  /*Orientado Retrato*/
+}
+@media all and (orientation:Landscape){
+  /*Orientação Paisagem*/
+}
+

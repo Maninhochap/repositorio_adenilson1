@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>seletores Complexos</title>
+        <style>
+            /**
+            ul li{
+                color: blue;
+            }**/
+            tr td{
+                color: rgb(22, 182, 22,);
+            }
+            ul > li{
+                color: coral;
+            }
+            h1+p{
+                color: magenta;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--Seletor descendente Ex.: Seletor 2 descendente seletor 1-->
+        <div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <td>Coluna 1</td>
+            </tr>
+            <tr>
+                <td>Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Coluna 4</td>
+            </tr>
+        </table>
+
+        <!--Seletor Filho Ex.: Todo seletro 2 deve ser filho de seletor 1-->
+            <ul>
+                <a href="#"><li>Item 1</li></a>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+
+            <tr>
+                <a href="#"><td>Coluna 1</td></a>
+            </tr>
+            <tr>
+                <td>Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Coluna 4</td>
+            </tr>
+
+        <!--Seletor imediatamente seguinte Ex.: Todo seletor 2 deve ser imediatamente após de seletor 1-->
+        <h1>Este e exemplo de setores filhos</h1>
+        <p>Este deve receber css</p>
+    </body>
+</html>

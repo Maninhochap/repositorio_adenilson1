@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title></title>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <br>
+      <h3 align="width">Dados pessoais</h3>
+      <hr>
+      <br>
+
+      <form>
+          <div class="form-group">
+              <div class="form-group">
+                  <label for="nome" class="control-label"><b>Nome</b></label>
+                  <input type="text" class="form-control" id="Nome" placeholder="Meu nome">
+              </div>
+          </div>
+
+          <div class="form-inline">
+              <div class="form-group">
+                  <label for="nome" class="control-label"><b>CPF</b></label>
+                  <input type="text" class="form-control" id="Nome" placeholder="000.000.000-00">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="nome" class="control-label"><b>Data Nascimento</b></label>
+                <input type="text" class="form-control" id="Nome" placeholder="dd/mm/aaaa">
+              </div>
+              <div class="form-group">
+                <label><b>Sexo</b></label>
+                <label>
+                  <input type="radio" name="masculino" value="masculino" checked>Masculino
+                  <input type="radio" name="feminino" value="feminino">Feminino
+                </label>
+  
+              </div>
+              
+          </div>
+          <div class="form-inline">
+            <div>
+                <label for="estado"><b>Estado Civil</b></label>
+            </div>
+            <div align="left">
+                <select name="estado" id="uf" aria-placeholder="">
+                    <option value="ac">Solteiro</option>
+                    <option value="al">Casado</option>
+                    <option value="am">Separado</option>
+                    <option value="ap">Divorciado</option>
+                    <option value="ba">Viúvo</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nome" class="control-label"><b>Renda Mensal</b></label>
+              <br><br><br>
+              <input type="text" class="form-control" id="Nome" placeholder="0,00">
+            </div>
+          </div>
+  
+      </form>
+      <br>
+      <h3 align="width">Endereço</h3>
+      <hr>
+      <br>
+
+      <form>
+          <div class="form-inline">
+              <div class="form-group col-md-4">
+                  <label for="nome" class="control-label"><b>Logradouro</b></label>
+                  <input type="text" class="form-control" id="Nome" placeholder="Av. Paulista">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="nome" class="control-label"><b>Numero</b></label>
+                  <input type="text" class="form-control" id="Nome" placeholder="N°">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="nome" class="control-label"><b>Complemento</b></label>
+                  <input type="text" class="form-control" id="Nome" placeholder="Casa, Apto, Loja">
+              </div>
+          </div>
+          <br>
+
+          <div class="form-inline">
+              <div>
+                  <label for="estado"><b>Estado</b></label>
+              </div>
+              <div align="left">
+                  <select name="estado" id="uf">
+                      <option value="ac">Acre</option>
+                      <option value="al">Alagoas</option>
+                      <option value="am">Amazonas</option>
+                      <option value="ap">Amapá</option>
+                      <option value="ba">Bahia</option>
+                      <option value="ce">Ceará</option>
+                      <option value="df">Distrito Federal</option>
+                      <option value="es">Esperito Santo</option>
+                      <option value="go">Goiás</option>
+                      <option value="ma">Maranhão</option>
+                      <option value="mt">Mato Grosso</option>
+                      <option value="ms">Mato grosso do Sul</option>
+                      <option value="mg">Minas Gerais</option>
+                      <option value="pa">Pará</option>
+                      <option value="pb">Paraiba</option>
+                      <option value="pe">Pernanbuco</option>
+                      <option value="pr">Paraná</option>
+                      <option value="pi">Piauí</option>
+                      <option value="rj">Rio de Janeiro</option>
+                      <option value="rn">Rio Grande do Norte</option>
+                      <option value="ro">Rondônia</option>
+                      <option value="rs">Rio Grande do Sul</option>
+                      <option value="rr">Roraima</option>
+                      <option value="sc">Santa Catarina</option>
+                      <option value="se">Sergipe</option>
+                      <option value="sp">São Paulo</option>
+                      <option value="to">Tocantins</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="nome" class="control-label"><b>Cidade</b></label>
+                <input type="text" class="form-control" id="Nome" placeholder="São Paulo">
+            </div>
+          </div>
+          <div>
+          <button type="submit" class="btn btn-info mb-2">Enviar</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
