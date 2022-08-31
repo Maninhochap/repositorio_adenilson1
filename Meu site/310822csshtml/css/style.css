@@ -1,0 +1,154 @@
+body{
+    counter-reset: birds;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+/*Esconder checkbox */
+input{
+    position: fixed;
+    left: -15px;
+    top: -15px;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+h2{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    font-size: 18px;
+    color: red;
+}
+/*area de jogo*/
+.wrapper{
+    height: 500px;
+    position: relative;
+    cursor: crosshair;
+    background: -webkit-linear-gradient(top, hsla(210, 70%, 80%, 1) 0%, hsla(210, 50%, 100%, 1)100%);
+}
+/*contar os passaros*/
+.input-circle:checked{
+    counter-increment: birds;
+}
+.sum{
+    position: fixed;
+    left: 45%;
+    top: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.sum:after{
+    content: counter(birds);
+}
+.input-circle ~ .passaro{
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0, .43, 1, 0);
+    animation: move 8s infinite alternate;
+}
+.input-circle1:not(:checked) ~ .passaro1,
+.input-circle2:not(:checked) ~ .passaro2,
+.input-circle3:not(:checked) ~ .passaro3,
+.input-circle4:not(:checked) ~ .passaro4,
+.input-circle5:not(:checked) ~ .passaro5,
+.input-circle6:not(:checked) ~ .passaro6{
+    opacity: 1;
+}
+.input-circle1:checked ~ .passaro1 span,
+.input-circle2:checked ~ .passaro2 span,
+.input-circle3:checked ~ .passaro3 span,
+.input-circle4:checked ~ .passaro4 span,
+.input-circle5:checked ~ .passaro5 span,
+.input-circle6:checked ~ .passaro6 span{
+    display: block;
+}
+.passaro{
+    position: absolute;
+    left: 0;
+    cursor: crosshair;
+}
+.passaro>span{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: -250%;
+    bottom: -50%;
+    background-color: white;
+    border: solid 2px #000;
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.passaro>span::before{
+    content: "=> Bandido <=";
+    color: red;
+    font-weight: bold;
+}
+.passaro1{
+    top: 50px;
+    animation-delay: -2s!important;
+    transform: scale(0.8);
+}
+.passaro2{
+    top: 100px;
+    animation-delay: -1s!important;
+    transform: scale(0.8);
+}
+.passaro3{
+    top: 200px;
+    animation-delay: -3s!important;
+    transform: scale(1.4);
+}
+.passaro4{
+    top: 50px;
+    animation-delay: -12s!important;
+    transform: scale(0.9);
+}
+.passaro5{
+    top: 100px;
+    animation-delay: -16s!important;
+    transform: scale(0.5);
+}
+.passaro6{
+    top: 200px;
+    animation-delay: -20s!important;
+    transform: scale(1.4);
+}
+/*Movimentos*/
+@keyframes move {
+    0%{left:0%;}
+    20%{left:20%; top:50%;}
+    40%{top:30%; left:60%;}
+    60%{top:80%; left:80%;}
+    80%{top:10%; left:20%;}
+    100%{top:30%; left:20%}
+}
+.timer{
+    background-color: #333;
+    width: 300px;
+    height: 50px;
+    position: fixed;
+}
+.timer span{
+    display: block;
+    background: repeating-linear-gradient(-45deg, #000, rgba(0,0,0) 25px, #fff 25px, #fff 50px);
+    width: 300px;
+    height: 50px;
+    animation: timer 20s linear;
+}
+.timer span:before{
+    content: "Tempo Restante";
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
