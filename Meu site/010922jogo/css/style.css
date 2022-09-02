@@ -36,28 +36,28 @@ input:nth-child(6n + 3):checked ~ input:nth-child(6n + 3),
 input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4) {
   pointer-events: none;
 }
-#um ~ input,
-#um ~ label {
+#one ~ input,
+#one ~ label {
   z-index: 6;
 }
-#dois ~ input,
-#dois ~ label {
+#two ~ input,
+#two ~ label {
   z-index: 5;
 }
-#tres ~ input,
-#tres ~ label {
+#three ~ input,
+#three ~ label {
   z-index: 4;
 }
-#quatro ~ input,
-#quatro ~ label {
+#four ~ input,
+#four ~ label {
   z-index: 3;
 }
-#cinco ~ input,
-#cinco ~ label {
+#five ~ input,
+#five ~ label {
   z-index: 2;
 }
-#seis ~ input,
-#seis ~ label {
+#six ~ input,
+#six ~ label {
   z-index: 1;
 }
 input#zero {
@@ -80,7 +80,7 @@ input[readonly]:focus + input + input + input:checked ~ #zero {
 }
 
 /*Discos*/
-.discos {
+.discs {
   position: relative;
   display: flex;
   flex-flow: column wrap;
@@ -89,33 +89,33 @@ input[readonly]:focus + input + input + input:checked ~ #zero {
   width: 90vmin;
   height: 35vmin;
 }
-.disco {
+.disc {
   z-index: 1;
   border-radius: 1vmin;
   height: 4vmin;
   pointer-events: none;
   transition: order 0.3s step-end;
 }
-input:checked + input + input + label + .disco {
+input:checked + input + input + label + .disc {
   order: 3;
 }
-input:checked + input + label + .disco {
+input:checked + input + label + .disc {
   order: 6;
 }
-input:checked + label + .disco {
+input:checked + label + .disc {
   order: 9;
 }
-input:focus + input:checked + input + input + label + .disco {
+input:focus + input:checked + input + input + label + .disc {
   order: 1;
   transition: order 0s;
   animation: float 3s ease-in-out infinite alternate;
 }
-input:focus + input + input:checked + input + label + .disco {
+input:focus + input + input:checked + input + label + .disc {
   order: 4;
   transition: order 0s;
   animation: float 3s ease-in-out infinite alternate;
 }
-input:focus + input + input + input:checked + label + .disco {
+input:focus + input + input + input:checked + label + .disc {
   order: 7;
   transition: order 0s;
   animation: float 3s ease-in-out infinite alternate;
@@ -126,57 +126,57 @@ input:focus + input + input + input:checked + label + .disco {
     transform: translateY(-1vmin);
   }
 }
-input:focus + input:hover + input + input + label + .disco,
-input + input:active + input + input + label + .disco {
+input:focus + input:hover + input + input + label + .disc,
+input + input:active + input + input + label + .disc {
   order: 1;
 }
-input:focus + input + input:hover + input + label + .disco,
-input + input + input:active + input + label + .disco {
+input:focus + input + input:hover + input + label + .disc,
+input + input + input:active + input + label + .disc {
   order: 4;
 }
-input:focus + input + input + input:hover + label + .disco,
-input + input + input + input:active + label + .discs {
+input:focus + input + input + input:hover + label + .disc,
+input + input + input + input:active + label + .disc {
   order: 7;
 }
-.um{
+.one {
   margin: 0 10vmin;
   width: 10vmin;
   background: linear-gradient(to right, #eea668, #ed7e1d, #e67e22);
 }
-.dois {
+.two {
   margin: 0 8vmin;
   width: 14vmin;
   background: linear-gradient(to right, #8ac4ea, #0f9fff, #3498db);
 }
-.tres {
+.three {
   margin: 0 6vmin;
   width: 18vmin;
   background: linear-gradient(to right, #f0d775, #fc0, #e6bd19);
 }
-.quatro {
+.four {
   margin: 0 4vmin;
   width: 22vmin;
   background: linear-gradient(to right, #666, #000, #333);
 }
-.cinco {
+.five {
   margin: 0 2vmin;
   width: 26vmin;
   background: linear-gradient(to right, #7ee2a8, #09f16a, #2ecc71);
 }
-.seis {
+.six {
   width: 30vmin;
   background: linear-gradient(to right, #f2a097, #ff3a24, #e74c3c);
 }
 
 /*Espaçadore e Separadores*/
-.espaco {
+.spacer {
   width: 30vmin;
   height: 1px;
   flex-grow: 0;
   pointer-events: none;
   transition: flex 0.3s;
 }
-.separador {
+.separator {
   width: 0;
   height: 100%;
 }
@@ -247,7 +247,7 @@ h1 {
 form {
   text-align: center;
 }
-.torre {
+.tower {
   position: absolute;
   top: 7.5vmin;
   border-radius: 1vmin;
@@ -264,7 +264,7 @@ form {
 .c {
   left: 72.5vmin;
 }
-.botao {
+.bottom {
   position: relative;
   display: block;
   margin: 0 auto;
