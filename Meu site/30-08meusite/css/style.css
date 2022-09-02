@@ -381,7 +381,7 @@ ul.social_icon1 li:last-child {
 }
 
 .header_midil {
-     background-color: #5593af;
+     background-color: white;
      width: 100%;
      padding: 45px 0;
 }
@@ -1273,7 +1273,7 @@ ul.location_icon li {
      line-height: 30px;
      color: #fff;
      text-align: left;
-     padding-bottom: 26px;
+     padding-bottom: 20px;
      float: left;
      padding-right: 13px;
 }
