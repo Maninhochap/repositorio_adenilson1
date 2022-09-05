@@ -39,7 +39,7 @@ html {
 }
 
 body {
-     background: rgba(255, 255, 255, 0.705);
+     background: #5593af;
      color: #090909;
      font-size: 14px;
      font-family: 'Raleway', sans-serif;
@@ -307,7 +307,7 @@ ul.lan li {
 
 .select,
 .label {
-     color: #fff;
+     color: rgb(245, 191, 13);
      display: block;
      font-size: 16px;
 }
@@ -381,9 +381,9 @@ ul.social_icon1 li:last-child {
 }
 
 .header_midil {
-     background-color: white;
+     background-color: #5593af;
      width: 100%;
-     padding: 45px 0;
+     padding: 10px 0;
 }
 
 .logo {
@@ -742,7 +742,7 @@ ul.sign li a i {
 /** service section **/
 
 .service {
-     background-color: #fff;
+     background-color: #5593af;
      padding-top: 80px;
 }
 
@@ -752,6 +752,7 @@ ul.sign li a i {
 
 .service .service_box img {
      display: block;
+     
 }
 
 .service .service_box h3 {
@@ -931,65 +932,10 @@ ul.sign li a i {
 
 /** end portfolio section **/
 
-
-/** business section **/
-
-.business {
-     background: #fff;
-     padding-top: 80px;
-}
-
-.business .titlepage h2 {
-     color: #010000;
-}
-
-.business .titlepage p {
-     color: #6f6f6e;
-     padding-top: 10px;
-}
-
-.business .business_box {
-     margin-bottom: 20px;
-}
-
-.business .business_box i {
-     float: left;
-     padding: 0;
-     margin-right: 10px;
-}
-
-.business .business_box h3 {
-     font-weight: bold;
-     font-size: 40px;
-     color: #29426c;
-     padding-bottom: 3px;
-     line-height: 42px;
-}
-
-.business .business_box p {
-     color: #f2db18;
-     font-size: 19px;
-     font-weight: bold;
-}
-
-.business .read_more {
-     color: #f2db18 !important;
-     margin-top: 60px;
-}
-
-.business .read_more::before {
-     border-right: #f2db18 solid 1px;
-     border-width: 90px;
-}
-
-
-/** end business section **/
-
-
 /** team section **/
 
 .team {
-     background: #fff;
+     background: #5593af;
      padding-top: 80px;
 }
 
@@ -1031,7 +977,7 @@ ul.social_icont li a {
      color: #060400;
      width: 40px;
      height: 40px;
-     background: #fff;
+     background: #5593af;
      float: left;
      text-align: center;
      line-height: 40px;
@@ -1070,7 +1016,7 @@ ul.social_icont li a {
 }
 
 .team_Carousel .carousel-indicators .active {
-     background-color: #fff;
+     background-color: #5593af;
      padding: 5px;
      width: 20px;
      height: 20px;
@@ -1097,7 +1043,7 @@ ul.social_icont li a {
 
 .testimonial {
      padding-top: 90px;
-     background-color: #fff;
+     background-color: #5593af;
 }
 
 .testimonial .titlepage {
@@ -1172,7 +1118,7 @@ ul.social_icont li a {
 
 .contact {
      padding-top: 80px;
-     background: #fff;
+     background: #5593af;
 }
 
 .contact .titlepage {
@@ -1243,7 +1189,7 @@ ul.social_icont li a {
 
 .footer {
      padding-top: 90px;
-     background: url(../images/footer_bg.jpg);
+     background: url(../images/caixadagua1.jpg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      text-align: center;
@@ -1252,6 +1198,7 @@ ul.social_icont li a {
 
 .logo2 {
      float: left;
+     
 }
 
 .footer h3 {
@@ -1261,7 +1208,7 @@ ul.social_icont li a {
      line-height: 30px;
      text-align: left;
      margin-bottom: 19px;
-     margin-top: 20px;
+     margin-top: 40px;
 }
 
 ul.location_icon {
@@ -1273,7 +1220,7 @@ ul.location_icon li {
      line-height: 30px;
      color: #fff;
      text-align: left;
-     padding-bottom: 20px;
+     padding-bottom: 26px;
      float: left;
      padding-right: 13px;
 }
@@ -1395,7 +1342,7 @@ ul.img_icon li {
 }
 
 .copyright {
-     background-color: #fff;
+     background-color: #5593af;
      margin-top: 70px;
      padding: 20px 0px;
 }
@@ -1417,4 +1364,3 @@ ul.img_icon li {
 
 
 /** end footer **/
-

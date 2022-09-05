@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(116, 117, 87);
+  font-family: Helvetica;
+}
+
+.container{
+  margin-top: 0px;
+  background-color: lightgray;
+  position: relative;
+  width: 800px;
+  margin-left: 200px;
+  padding: 15px;
+
+}
+
+h1{
+  color:rgb(96, 124, 200);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+  color:rgb(83, 116, 204);
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+h3{
+  color:rgb(77, 106, 188);
+  font-weight: bold;
+  text-align: center;
+  margin-left: 25px;
+}
+
+hr{
+  color: aliceblue;
+
+}
+
+img{
+  position: fixed;
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 160px;
+  height: 160px;
+}
