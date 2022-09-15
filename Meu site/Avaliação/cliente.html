@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-CSS-FRONT-END</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div>
+        <table>
+            <h2 class="titulo">Cadastro de Cliente</h2>
+            <ul class="menu">
+                <li><a href="cliente.html">Cliente</a></li>
+                <li><a href="produto.html">Produto</a></li>
+            </ul>
+            <div >
+                <img src="img/logopretaamarelo.png"/>
+            </div>
+        </table>
+        <hr>
+        <table cellspacing="18">
+            <tr><td><h2>Dados do Cliente</h2> </td></tr>
+            <tr>
+                <td><label class="lbl">Razão Social/Nome:</label></td>
+                <td><input type="text" placeholder="Nome Completo/Razão Social" class="txt"></td>
+                <td><label class="lbl">Nome Fantasia:</label></td>
+                <td><input type="text" placeholder="Se Empresa" class="txt"></td>
+            </tr>
+            <tr>
+                <td><label class="lbl">CPF/CNPJ:</label></td>
+                <td><input type="text" placeholder="CPF/CNPJ" class="txt"></td>
+                <td><label class="lbl">Fundação/Nascimento:</label></td>
+                <td><input type="text" placeholder="dd/mm/aaaa" class="txt"></td>>
+            </tr>
+            <td><h2>Endereço</h2></td>
+            <tr>
+                <td><label class="lbl">Av/Rua:</label></td>
+                <td><input type="text" placeholder="Av/Rua" class="txt"></td>
+                <td><label class="lbl">Número:</label></td>
+                <td><input type="number" placeholder="Número" class="txt"></td>>
+            </tr>
+            <tr>
+                <td><label class="lbl">Cidade:</label></td>
+                <td><input type="text" placeholder="Cidade" class="txt"></td>
+                <td><label class="lbl">Estado:</label></td>
+                <td><input type="text" placeholder="Estado" class="txt"></td>
+            </tr>
+            <td><h2>Contato</h2></td>
+            <tr>
+                <td><label class="lbl">Telefone:</label></td>
+                <td><input type="tel" placeholder="Telefone" class="txt"></td>
+                <td><label class="lbl">E-mail:</label></td>
+                <td><input type="text" placeholder="E-mail" class="txt"></td>
+            </tr>
+            <tr>
+                <td><label class="lbl">Celular 1:</label></td>
+                <td><input type="tel" placeholder="Celular" class="txt"></td>
+                <td><label class="lbl">Celular 2:</label></td>
+                <td><input type="text" placeholder="Celular" class="txt"></td>
+            </tr>
+            <td><h2>Atividade</h2></td>
+            <tr>
+                <td><label class="lbl">Atividade Econômica/Profissão:</label></td>
+                <td><input type="text" placeholder="Profissão" class="txt"></td>
+            </tr>
+            <td><h2>Dependentes</h2></td>
+            <tr>
+                <td><label class="lbl">Nome:</label></td>
+                <td><input type="text" placeholder="Nome Do Dependente" class="txt"></td>
+                <td><label class="lbl">Data Nascimento:</label></td>
+                <td><input type="date" placeholder="Data Nascimento" class="txt"></td>
+            </tr>
+        </table>
+        <div align="center">
+            <button class="btn-add" type="submit">Adicionar Dependente</button>
+        </div>
+        <br><br><hr>
+        <div align = "right">
+            <button class="btn-cadastrar" type="submit">Cadastrar</button>
+            <button class="btn-reset" type="reset">Cancelar</button>
+        </div>
+    </div>
+    <footer>
+        <h3><i class="fa-solid fa-copyright"></i> Copyright Formação Desenvolvedores em TI - 
+            <i class="fa-solid fa-registered"></i> Todos os Direitos reservados</h3>
+    </footer>
+</body>
+</html>
