@@ -1,0 +1,169 @@
+body{
+  margin: 0 auto;
+  width: 940px;
+  font: 13px/22px Helvetica, Arial, sans-serif;
+  background: #f0f0f0;
+}
+h1, h2, h3{
+  text-align: left;
+}
+h2{
+  font-size: 18px;
+  line-height: 5px;
+  padding: 2px 0;
+}
+h3{
+  font-size: 12px;
+  line-height: 5px;
+  padding: 2px 0;
+}
+.intro{
+  border: 1px solid #999999;
+  text-align: left;
+  margin-top: 6px;
+  padding-left: 15px;
+  border-radius: 25px;
+  background-image: -o-linear-gradient(45deg, #ffffff, #6699cc);
+  background-image: -webkit-linear-gradient(45deg, #ffffff, #6699cc);
+  background-image: linear-gradient(45deg, #ffffff, #6699cc);
+}
+nav{
+  left: 0;
+  background-color: #003366;
+  height: 30px;
+  border-radius: 15px;
+
+}
+nav ul{
+  margin: 0;
+  list-style: none;
+
+}
+nav ul li{
+  float: left;
+}
+nav ul li a{
+  display: block;
+  margin-right: 20px;
+  width: 140px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #cccccc;
+}
+nav ul li a:hover{
+  color: #fff;
+}
+#contentArea{
+  display: table;
+}
+#mainContent{
+  display: table-cell;
+  padding-right: 2px;
+}
+.rounded{
+  border: 1px solid;
+  border-color: #999999;
+  border-radius: 25px;
+  padding: 24px;
+}
+.featureContent{
+  background-color: #c0c0c0;
+  border: 1px solid #999999;
+  padding: 15px 15px 15px 15px;
+}
+.otherContent{
+  background-color: #c0c0c0;
+  border: 1px solid #999999;
+  padding: 15px 15px 15px 15px;
+}
+article div{
+  text-align: justify;
+  padding: 6px;
+
+  -o-column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+
+  -moz-column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+}
+article img{
+  margin: 10px 0;
+  box-shadow: 3px 3px 12px #222;
+  width: 85px;
+  height: 85px;
+}
+.rotateContent{
+  -webkit-perspective: 600px;
+}
+.rotate{
+  -webkit-transform-style: preserve-3d;
+}
+p{
+  padding-bottom: 2px;
+}
+.book{
+  padding: 5px;
+}
+aside{
+  background-color: #6699cc;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 3px 3px 3px #aaaaaa;
+  border: 1px solid #999999;
+  border-radius: 12px;
+  display: table-cell;
+  width: 200px;
+}
+footer{
+  height: 5px;
+  border-radius: 25px;
+  margin-top: 12px;
+  text-align: center;
+  background-color: #ddd;
+}
+footer p{
+  padding: 10px;
+}
+.book img{
+  margin: 10px 0;
+  display: block;
+  box-shadow: 2px 2px 5px #444;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  height: 85px;
+}
+#titles article:nth-child(2n+1){
+  background-color: #c0c0c0;
+  border: 1px solid #6699cc;
+  border-radius: 10px;
+}
+#titles article:nth-child(2n+0){
+  background-color: #6699cc;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+}
+/*Animate the moon phases*/
+#moon{
+  width: 160px;
+  height: 160px;
+  background-color: url("/080922revisão/img/1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation-name: moonPhases;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes moonPhases{
+  0%{background-image: url("/080922revisão/img/1.svg");}
+  25%{background-image: url("/080922revisão/img/2.svg");}
+  50%{background-image: url("/080922revisão/img/3.svg");}
+  100%{background-image: url("/080922revisão/img/4.svg");}
+}

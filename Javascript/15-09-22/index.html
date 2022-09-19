@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos javascript</title>
+    <script src="./text.js"></script>
+  </head>
+  <body>
+    <p>Clique dentro e fora do input</p>
+
+    <input type="text" id="meuInput" onfocus="dentro()" onblur="fora()" />
+
+    <hr />
+    <p>Selecione um carro na lista</p>
+    <select id="mySelect" onchange="myFunction()">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Volvo">Volvo</option>
+    </select>
+    <p>
+      Quando você seleciona um carro novo, uma função é acionada que gera um
+      valor do carro selecionada
+    </p>
+    <p id="demo"></p>
+
+    <hr>
+
+    <p>
+      A função é acionada quando é precionado uma tecla dentro do campo
+    </p>
+
+    <input size="40" value="Escreva neste campo!!!" onkeypress="GetChar (event);"/>
+
+    <hr>
+
+    <p>Digite a, e, i, o ou u: </p>
+     <input type="text" onkeypress="detecta(event)">
+
+    <hr>
+
+    <p>Imagem onload.</p>
+    <img src="img/foto.jpg" onload="imagemCarregada()" width="200" height="264">
+
+    <hr>
+
+    <h1 id="exemplo" onmouseover="mouseOver();" onmouseout="mouseOut();">Evento onmouseover e onmeuseout</h1>
+
+    <hr>
+
+    <h2>Evento do onsubmit</h2>
+        <form onsubmit = "Geeks()">
+            Nome:<input type = "text" ><br/>
+            Sobrenome:<input type = "text" ><br/>
+            <input type = "submit" value = "Submit" />
+        </form>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-CSS-FRONT-END</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div>
+        <table>
+            <h2 class="titulo">Cadastro de Produto</h2>
+            <ul class="menu">
+                <li><a href="cliente.html">Cliente</a></li>
+                <li><a href="produto.html">Produto</a></li>
+            </ul>
+            <div >
+                <img src="img/logopretaamarelo.png"/>
+            </div>
+        </table>
+        <hr>
+        <table cellspacing="18">
+            <tr><td><h2>Dados do Produto</h2> </td></tr>
+            <tr>
+                <td><label class="lbl">Nome Do Produto:</label></td>
+                <td><input type="text" placeholder="Nome" class="txt"></td>
+                <td><label class="lbl">Marca Do Produto:</label></td>
+                <td><input type="text" placeholder="Marca" class="txt"></td>
+            </tr>
+            <tr>
+                <td><label class="lbl">Descrição do Produto:</label></td>
+                <td><input type="text" placeholder="Descrição" class="txt"></td>
+                <td><label class="lbl">Categoria:</label></td>
+                <td><input type="text" placeholder="Categoria" class="txt"></td>>
+            </tr>
+            <tr>
+                <td><label class="lbl">Fabricante:</label></td>
+                <td><input type="text" placeholder="Fabricante" class="txt"></td>
+                <td><label class="lbl">Quantidade:</label></td>
+                <td><input type="text" placeholder="Quantidade" class="txt"></td>
+            </tr>
+            <tr>
+                <td><label class="lbl">Data Compra:</label></td>
+                <td><input type="tel" placeholder="dd/mm/aaaa" class="txt"></td>
+                <td><label class="lbl">NF Compra:</label></td>
+                <td><input type="number" placeholder="NF Compra" class="txt"></td>
+            </tr>
+            <tr>
+                <td><label class="lbl">Validade:</label></td>
+                <td><input type="tel" placeholder="Validade" class="txt"></td>
+                <td><label class="lbl">Distribuidora/Vendedor:</label></td>
+                <td><input type="text" placeholder="Distribuidora/Vendedor" class="txt"></td>
+            </tr>
+            <td><h2>Valores</h2></td>
+            <tr>
+                <td><label class="lbl">Preço de Compra:</label></td>
+                <td><input type="number" placeholder="R$ 0.00,00" class="txt"></td>
+                <td><label class="lbl">Preço de Venda:</label></td>
+                <td><input type="number" placeholder="R$ 0.00,00" class="txt"></td>>
+            </tr>
+            <td><h2>Dados Tributários</h2></td>
+            <tr>
+                <td><label class="lbl">Valor ICMS:</label></td>
+                <td><input type="number" placeholder="ICMS" class="txt"></td>
+                <td><label class="lbl">Valor IPI:</label></td>
+                <td><input type="text" placeholder="IPI" class="txt"></td>
+            </tr>
+        </table>
+        <br><br><hr>
+        <div align = "right">
+            <button class="btn-cadastrar" type="submit">Cadastrar</button>
+            <button class="btn-reset" type="reset">Cancelar</button>
+        </div>
+    </div>
+    <footer>
+        <h3><i class="fa-solid fa-copyright"></i> Copyright Formação Desenvolvedores em TI - 
+            <i class="fa-solid fa-registered"></i> Todos os Direitos reservados</h3>
+    </footer>
+</body>
+</html>
