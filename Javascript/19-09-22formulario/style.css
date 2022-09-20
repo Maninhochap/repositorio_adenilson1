@@ -22,3 +22,7 @@ form{
     color: #fff;
     text-shadow: #fff 4px 4px 4px;
 }
+#olho{
+	position:absolute;
+	right:160px;
+}

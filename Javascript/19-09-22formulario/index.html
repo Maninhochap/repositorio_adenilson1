@@ -39,6 +39,8 @@ crossorigin="anonymous">
             <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
         </div>
         <div class="mb-3">
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" 
+            id="olho" class="olho" width="20">
             <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
         </div>
         <div class="mb-3">
@@ -48,5 +50,19 @@ crossorigin="anonymous">
             <input type="submit" class="form-control" onclick="return validar()" name="enviar" id="enviar" placeholder="Enviar">
         </div>
     </form>
+    <script type="text/javascript">
+        document.getElementById('olho').addEventListener('mousedown', function() {
+        document.getElementById('senha').type = 'text';
+      });
+  
+      document.getElementById('olho').addEventListener('mouseup', function() {
+        document.getElementById('senha').type = 'password';
+      });
+  
+      // Para que o password não fique exposto apos mover a imagem.
+      document.getElementById('olho').addEventListener('mousemove', function() {
+        document.getElementById('senha').type = 'password';
+      });
+  </script>
 </body>
 </html>
