@@ -1,0 +1,15 @@
+.bola{
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    /*background-color: #000;*/
+    position: absolute;
+    background-image: url("fantasma.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+    
+}
+*{
+    background-color: rgb(172, 166, 166);
+}
