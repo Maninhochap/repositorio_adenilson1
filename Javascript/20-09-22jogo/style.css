@@ -10,6 +10,9 @@
 
     
 }
+body{
+    cursor:crosshair;
+  }
 *{
     background-color: rgb(172, 166, 166);
 }
