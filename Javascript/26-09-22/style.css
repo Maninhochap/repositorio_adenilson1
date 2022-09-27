@@ -1,0 +1,28 @@
+body{
+  background-color: antiquewhite;
+}
+
+.card{
+  width: 280px;
+  margin: 10px;
+  display: inline-flex;
+}
+
+.card-body{
+  background-color: white;
+  color: rgb(57, 57, 78);
+  border-radius: 10%;
+  text-align: center;
+}
+
+.card-text{
+  color: rgb(13, 52, 157);
+}
+
+.card-title {
+color: rgb(3, 3, 12);
+}
+
+h1{
+  text-align: center;
+}
