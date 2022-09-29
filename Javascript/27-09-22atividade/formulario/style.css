@@ -1,0 +1,24 @@
+*{
+    margin:0 auto;
+    padding:0 auto;
+}
+form{
+    width: 80%;
+    padding: 10px 10px;
+    background-image: linear-gradient(to bottom right, rgb(229, 30, 30), rgb(165, 117, 117));
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#erro{
+    width: 90%;
+    height: 40px;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+.cadastro{
+    color: #fff;
+    text-shadow: #fff 4px 4px 4px;
+}
