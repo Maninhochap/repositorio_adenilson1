@@ -4,15 +4,19 @@ body{
   font-family: 'Arvo', serif;
 }
 .card{
+  font-family: 'Arvo', serif;
   margin-top: 10px;
 }
 .city{
+  font-family: 'Arvo', serif;
   font-size: 32px;
 }
 .date{
+  font-family: 'Arvo', serif;
   font-size: 16px;
 }
 .container-temp{
+  font-family: 'Arvo', serif;
   display: flex;
   justify-content: center;
   background-color: rgba(244, 208, 63, 0.2);
@@ -23,8 +27,10 @@ body{
   text-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 .weather{
+  font-family: 'Arvo', serif;
   font-size: 32px;
 }
 .low-high{
+  font-family: 'Arvo', serif;
   font-size: 22px;
 }
