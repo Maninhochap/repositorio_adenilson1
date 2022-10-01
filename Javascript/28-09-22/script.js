@@ -16,6 +16,39 @@ const search_input   = document.querySelector(".form-control");
 const search_button  = document.querySelector(".btn");
 const low_high       = document.querySelector(".low-high");
 
+window.addEventListener('load', () =>{
+
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(setPosition, showError);
+    }else{
+        alert('Navegador não suporta geolocalização!');
+    }
+    function setPosition(position){
+        console.log(position);
+        let lat = position.coords.latitude;
+        let long = position.coords.longitude;
+        coordResults(lat, long);
+    }
+    function showError(error){
+        alert(`erro: ${error.message}`);
+    }
+});
+function coordResults(lat, long){
+    fetch(`${api.base}weather?lat=${lat}&lon=${long}&lang=${api.lang}&units=${api.units}&APPID=${api.key}`)
+    .then(response =>{
+        if(!response.ok){
+            throw new Error(`http error: status ${response.status}`)
+        }
+        return response.json();
+    })
+    .catch(error =>{
+        alert(error.message);
+    })
+    .then(response => {
+        displayResults(response);
+    })
+}
+
 search_button.addEventListener('click', function(){
     searchResults(search_input.value);
 });
@@ -47,14 +80,43 @@ function displayResults(weather){
     city.innerText = `${weather.name}, ${weather.sys.country}`;
     
     let now = new Date();
-    data.innerText = now;
+    data.innerText = formatData(now);
 
+    let iconName = weather.weather[0].icon;
+    container_img.innerHTML = `<img src="./icons/${iconName}.png">`;
     let temperatura = `${Math.round(weather.main.temp)}`
     temp_number.innerText = temperatura;
-    temp_unit.innerText = `°C`;
+    temp_unit.innerText = `°c`;
 
     weather_tempo = weather.weather[0].description;
     weather_t.innerText = weather_tempo.toUpperCase(weather_tempo);
 
     low_high.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+}
+
+container_temp.addEventListener('click', changeTemp)
+function changeTemp(){
+
+    temp_number_now = temp_number.innerHTML;
+
+    if(temp_unit.innerHTML == "°c"){
+        let f = (temp_number_now * 1.8) + 32;
+        temp_unit.innerHTML = "°f";
+        temp_number.innerHTML = Math.round(f);
+    }else{
+        let c = (temp_number_now - 32) / 1.8;
+        temp_unit.innerHTML = "°c";
+        temp_number.innerHTML = Math.round(c);
+    }
+}
+function formatData(d){
+    let days = ["Domingo", "Segunda", "Terça", 'Quarta', "Quinta", "Sexta", "Sábado"];
+    let months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    
+    let day = days[d.getDay()];
+    let date = d.getDate();
+    let month = months[d.getMonth()];
+    let year = d.getFullYear();
+
+    return `${day}, ${date} de ${month} ${year}`;
 }
